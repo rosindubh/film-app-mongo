@@ -1,3 +1,5 @@
+// phil welsby - 8 sept 2021
+
 const connection = require("./db/connection");
 const {addMovie, listMovies} = require("./utils");
 const command = process.argv[2];
