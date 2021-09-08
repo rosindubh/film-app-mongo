@@ -7,8 +7,8 @@ const connection = async (crudFunc, dataObj) => {
     await client.connect();
     const db = client.db("movies");
     const collection = db.collection("movie");
-    await crudFunc(collection, dataObj)
+    await crudFunc(collection, dataObj);
     client.close()
-}
+};
 
 module.exports = connection;
