@@ -12,7 +12,9 @@ const app = async () => {
             like: process.argv[5]
         }
         await connection(addMovie, newMovie)
-    } 
+    } else if (command === 'list') {
+        await connection(listMovies)
+    }
 }
 
 app();
