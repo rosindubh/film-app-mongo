@@ -11,4 +11,5 @@ const connection = async (crudFunc, dataObj) => {
     client.close()
 };
 
+
 module.exports = connection;
